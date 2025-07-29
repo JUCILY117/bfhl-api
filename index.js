@@ -18,6 +18,8 @@ function alternatingCaps(str) {
   return result;
 }
 
+app.get('/ping', (req, res) => res.status(200).send('ok'));
+
 app.post('/bfhl', (req, res) => {
   try {
     const input = req.body;
